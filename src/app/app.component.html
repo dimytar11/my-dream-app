@@ -1,0 +1,57 @@
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Hello </h1>
+      <hr>
+      <app-warning-alert></app-warning-alert>
+      <app-success-alert></app-success-alert>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{username}} </p>
+      <button class="btn btn-primary" [disabled]="username === ''" (click)="username = ''">Reset User</button>
+      <hr>
+      <button class="btn btn-primary" (click)="onToggleDetails()">Display Details</button>
+      <p *ngIf="showSecret; else noSecret">Secret Password = tuna</p>
+      <div
+      *ngFor="let logItem of log"
+      [ngStyle] = "{backgroundColor: logItem >= 5 ? 'blue' : 'transparent'}"
+      [ngClass]="{'white-text' : logItem >= 5}"
+      >{{logItem}} </div>
+      <ng-template #noSecret>
+        <p>No secret pass</p>
+      </ng-template>
+    </div>
+  </div>
+  <hr>
+  <hr>
+  <app-cockpit (serverCreated) = "onServerAdded($event)"></app-cockpit>
+  <div class="row">
+    <div class="col">
+      <app-server
+      *ngFor="let serverElement of serverElements"
+      [element] = "serverElement"></app-server>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-game-control (intervalFired)="onIntervalFired($event)"></app-game-control>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
+    </div>
+    <div class="col-sm">
+      <app-even *ngFor="let evenNumber of evenNumbers" [number]="evenNumber"></app-even>
+    </div>
+  </div>
+  <div class="row">
+    <p appBasicHighlight>In this paragraph I'm using basic directive</p>
+  </div>
+</div> -->
+
+
